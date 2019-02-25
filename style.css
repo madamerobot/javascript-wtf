@@ -152,7 +152,7 @@ span:nth-child(4)::after {
 .intro-container {
     display: flex;
     flex-direction: row;
-    height: 92vh;
+    height: 100vh;
     background: #DEF9FA;
     align-items: center;
 }
@@ -231,15 +231,22 @@ img {
     color: black;
 }
 
+#sign-up-button {
+    font-size: 23px;
+    line-height: 25px;
+    background: none;
+    border: none;
+}
+
 #mce-EMAIL {
     border-bottom: solid 2px black;
 }
 
-#mc-embedded-subscribe {
+#mc-embedded-subscribe, #sign-up-button {
     cursor: pointer;
 }
 
-input:focus {
+input:focus, #sign-up-button:focus {
     outline: none;
 }
 
