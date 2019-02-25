@@ -192,6 +192,38 @@ img {
     height: auto;
 }
 
+.signup-form {
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.signup-form input {
+    background: none;
+    border: none;
+    font-size: 23px;
+    line-height: 25px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-form input::placeholder {
+    color: black;
+}
+
+#mce-EMAIL {
+    border-bottom: solid 2px black;
+}
+
+#mc-embedded-subscribe {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+
 @media (max-width: 920px) {
     /* .center-container {
         width: 100%;
