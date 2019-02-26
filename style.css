@@ -118,7 +118,7 @@ span:nth-child(4)::after {
 
 .center-container {
     width: 80%;
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -130,6 +130,7 @@ span:nth-child(4)::after {
     border-top: black solid 2px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -152,6 +153,7 @@ span:nth-child(4)::after {
 .intro-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: 100vh;
     background: #DEF9FA;
     align-items: center;
@@ -231,7 +233,7 @@ img {
     color: black;
 }
 
-#sign-up-button {
+#sign-up-button-scroller {
     font-size: 23px;
     line-height: 25px;
     background: none;
@@ -242,11 +244,11 @@ img {
     border-bottom: solid 2px black;
 }
 
-#mc-embedded-subscribe, #sign-up-button {
+#mc-embedded-subscribe, #sign-up-button-scroller {
     cursor: pointer;
 }
 
-input:focus, #sign-up-button:focus {
+input:focus, #sign-up-button-scroller:focus {
     outline: none;
 }
 
@@ -263,8 +265,20 @@ input:focus, #sign-up-button:focus {
     .row {
         flex-direction: column-reverse;
     }
+    #sign-up div:first-child {
+        margin-top: 50px;
+    }
     .typo-wrapper {
         display: none;
+    }
+    .about-container p {
+        width: 100%;
+    }
+    .about-container .left {
+        margin-top: 50px;
+    }
+    .about-container img {
+        position: relative;
     }
     .intro-container {
         height: 100%;
