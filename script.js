@@ -36,8 +36,10 @@ function configfMailchimp() {
             delete window[callback];
             document.body.removeChild(script);
 
+            const cleanString = data.msg.split("").splice(4).join('')
+
             // Display response message
-            document.getElementById('js-subscribe-response').innerHTML = data.msg
+            document.getElementById('js-subscribe-response').innerHTML = cleanString
         }
     })
 }
